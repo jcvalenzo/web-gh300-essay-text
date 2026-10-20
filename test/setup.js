@@ -13,4 +13,5 @@ HTMLDialogElement.prototype.close ??= function () {
   this.dispatchEvent(new Event('close'))
 }
 Element.prototype.scrollIntoView ??= () => {}
-window.scrollTo = () => {}
+// Recent Chrome returns a Promise from scrollTo; mimic it so effects that return it fail here.
+window.scrollTo = () => Promise.resolve()

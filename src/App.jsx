@@ -9,7 +9,9 @@ import { StartScreen } from './screens/start/StartScreen.jsx'
 export default function App() {
   const session = useExamSession(questions)
 
-  useEffect(() => window.scrollTo(0, 0), [session.phase])
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [session.phase])
 
   switch (session.phase) {
     case PHASE.EXAM:
