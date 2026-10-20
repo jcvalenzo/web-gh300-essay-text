@@ -1,4 +1,4 @@
-import { PASS_PERCENT } from '../config.js'
+import { DOMAIN_WEIGHTS, PASS_PERCENT } from '../config.js'
 
 function shuffle(arr) {
   const a = [...arr]
@@ -13,9 +13,27 @@ export const isMultiple = (q) => q.answer.length > 1
 
 export const toPercent = (part, total) => (total ? Math.round((part * 100) / total) : 0)
 
-// Shuffles questions and their options; `answer` is remapped to the new option order.
-export function buildExam(questions) {
-  return shuffle(questions).map((q) => {
+// Picks `size` random questions, each domain in proportion to its weight; domains short of questions are filled from the rest.
+export function pickByWeight(questions, size, weights) {
+  const total = Object.values(weights).reduce((a, b) => a + b, 0)
+  const quota = Object.fromEntries(
+    Object.entries(weights).map(([domain, w]) => [domain, Math.round((size * w) / total)]),
+  )
+  const picked = []
+  const rest = []
+  for (const q of shuffle(questions)) {
+    if (quota[q.domain] > 0) {
+      quota[q.domain]--
+      picked.push(q)
+    } else rest.push(q)
+  }
+  return shuffle([...picked, ...rest.slice(0, Math.max(0, size - picked.length))].slice(0, size))
+}
+
+// Picks `size` questions following the official domain weights and shuffles their options;
+// `answer` is remapped to the new option order.
+export function buildExam(questions, size = questions.length) {
+  return pickByWeight(questions, size, DOMAIN_WEIGHTS).map((q) => {
     const order = shuffle(q.options.map((_, i) => i))
     return {
       ...q,

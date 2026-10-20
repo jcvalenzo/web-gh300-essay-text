@@ -1,7 +1,8 @@
 # Simulador GH-300 (GitHub Copilot)
 
-App React + Vite que simula el examen de certificación GH-300: 66 preguntas aleatorias, 100 minutos,
-70% para aprobar, y al final revisión con respuesta correcta, explicación y enlace a la documentación.
+App React + Vite que simula el examen de certificación GH-300: 60 preguntas aleatorias repartidas según los pesos
+oficiales de cada dominio (o el banco completo de 133, a elección en la pantalla inicial), 100 minutos, 70% para
+aprobar, y al final revisión con respuesta correcta, explicación y enlace a la documentación.
 
 ## Desarrollo
 
@@ -37,7 +38,7 @@ Salida esperada de `npm test`:
 
 ```
  Test Files  11 passed (11)
-      Tests  120 passed (120)
+      Tests  194 passed (194)
 ```
 
 En Docker, los tests se ejecutan durante el build; para correr solo lint y tests sin generar la imagen final:
@@ -48,19 +49,19 @@ docker build --target build .
 
 ### Qué se prueba
 
-| Archivo                                     | Tipo        | Cubre                                                                                                   |
-| ------------------------------------------- | ----------- | ------------------------------------------------------------------------------------------------------- |
-| `test/data/questions.test.js`               | Datos       | Cada pregunta tiene texto, dominio, explicación, enlace `https` y respuestas válidas; ids únicos        |
-| `test/lib/exam.test.js`                     | Unitario    | Mezcla sin perder la respuesta correcta, corrección, selección única/múltiple, calificación por dominio |
-| `test/lib/session.test.js`                  | Unitario    | Reducer: inicio, responder, marcar, navegar, entregar una sola vez, acciones inválidas                  |
-| `test/lib/paginate.test.js`                 | Unitario    | Páginas, última página incompleta, páginas fuera de rango, lista vacía                                  |
-| `test/lib/format.test.js`                   | Unitario    | Formato `mm:ss` del temporizador y `cx`                                                                 |
-| `test/hooks/useCountdown.test.js`           | Hook        | Cuenta regresiva y aviso al expirar (timers simulados)                                                  |
-| `test/components/ui/Pagination.test.jsx`    | Componente  | Página actual, botones deshabilitados, navegación                                                       |
-| `test/screens/exam/QuestionCard.test.jsx`   | Componente  | Radios vs checkboxes, selección, navegación, terminar en la última pregunta, marcar                     |
-| `test/screens/exam/FinishDialog.test.jsx`   | Componente  | Resumen del modal, confirmar y cancelar                                                                 |
-| `test/screens/result/ResultScreen.test.jsx` | Componente  | Puntaje, desglose, aviso de tiempo agotado, paginación y filtros de la revisión                         |
-| `test/App.test.jsx`                         | Integración | Flujo completo comenzar → responder → modal → resultados → repetir; entrega por tiempo                  |
+| Archivo                                     | Tipo        | Cubre                                                                                                                                   |
+| ------------------------------------------- | ----------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| `test/data/questions.test.js`               | Datos       | Cada pregunta tiene texto, dominio, explicación, enlace `https` y respuestas válidas; ids únicos                                        |
+| `test/lib/exam.test.js`                     | Unitario    | Selección por pesos de dominio, mezcla sin perder la respuesta correcta, corrección, selección única/múltiple, calificación por dominio |
+| `test/lib/session.test.js`                  | Unitario    | Reducer: inicio, responder, marcar, navegar, entregar una sola vez, acciones inválidas                                                  |
+| `test/lib/paginate.test.js`                 | Unitario    | Páginas, última página incompleta, páginas fuera de rango, lista vacía                                                                  |
+| `test/lib/format.test.js`                   | Unitario    | Formato `mm:ss` del temporizador y `cx`                                                                                                 |
+| `test/hooks/useCountdown.test.js`           | Hook        | Cuenta regresiva y aviso al expirar (timers simulados)                                                                                  |
+| `test/components/ui/Pagination.test.jsx`    | Componente  | Página actual, botones deshabilitados, navegación                                                                                       |
+| `test/screens/exam/QuestionCard.test.jsx`   | Componente  | Radios vs checkboxes, selección, navegación, terminar en la última pregunta, marcar                                                     |
+| `test/screens/exam/FinishDialog.test.jsx`   | Componente  | Resumen del modal, confirmar y cancelar                                                                                                 |
+| `test/screens/result/ResultScreen.test.jsx` | Componente  | Puntaje, desglose, aviso de tiempo agotado, paginación y filtros de la revisión                                                         |
+| `test/App.test.jsx`                         | Integración | Flujo completo comenzar → responder → modal → resultados → repetir; elegir 60 o todas; entrega por tiempo                               |
 
 ### Convenciones para agregar tests
 
@@ -84,7 +85,7 @@ docker run --rm -p 8080:80 gh300-sim   # http://localhost:8080
 
 ```
 src/
-├── config.js            # Constantes del examen (tiempo, % aprobación, tamaño de página, fuentes)
+├── config.js            # Constantes del examen (tiempo, nº de preguntas, pesos por dominio, % aprobación, tamaño de página, fuentes)
 ├── data/questions.json  # Banco de preguntas
 ├── lib/                 # Lógica pura sin React
 │   ├── exam.js          #   mezclar, corregir, calificar, resumir progreso
@@ -125,8 +126,13 @@ test/                    # Tests, con la misma estructura de carpetas que src/
 `src/data/questions.json` (`answer` = índices de las opciones correctas, `docs` = enlace para repasar).
 
 - `ghc-*`: tomadas de [ghcertified.com](https://ghcertified.com/es/questions/copilot)
-  ([repo](https://github.com/v-fidelusaleksander/ghcertified), licencia GPL-3.0), con explicaciones añadidas.
-- `ext-*`: preguntas propias basadas en los temas de la
-  [certificación oficial](https://learn.microsoft.com/es-es/credentials/certifications/github-copilot/).
+  ([repo](https://github.com/v-fidelusaleksander/ghcertified), licencia GPL-3.0), con explicaciones añadidas. Se
+  quitaron las que trataban la extensión `gh copilot` (retirada en octubre de 2025) y se actualizó la de Copilot
+  Extensions (reemplazadas por MCP).
+- `ms-*`: las 50 preguntas de la [evaluación de práctica oficial](https://learn.microsoft.com/es-es/credentials/certifications/github-copilot/?practice-assessment-type=certification)
+  de Microsoft, con su explicación; las opciones incorrectas son propias, porque el informe solo muestra la correcta.
+- `ext-*`: preguntas propias que cubren los temas de la
+  [guía de estudio oficial](https://learn.microsoft.com/en-us/credentials/certifications/resources/study-guides/gh-300)
+  (habilidades medidas desde el 7 de agosto de 2026) que faltaban en las otras fuentes.
 
 No es material oficial de GitHub ni de Microsoft.
