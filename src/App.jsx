@@ -22,7 +22,7 @@ export default function App() {
           exam={session.exam}
           answers={session.answers}
           timedOut={session.timedOut}
-          onRestart={session.start}
+          onRestart={() => session.start(session.exam.length)}
         />
       )
     default:

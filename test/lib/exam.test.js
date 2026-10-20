@@ -5,6 +5,7 @@ import {
   countByDomain,
   grade,
   isCorrect,
+  pickByWeight,
   summarizeProgress,
   toPercent,
   toggleSelection,
@@ -21,10 +22,48 @@ describe('buildExam', () => {
     }
   })
 
+  test('elige la cantidad pedida de preguntas distintas', () => {
+    const exam = buildExam(questions, 10)
+    expect(exam).toHaveLength(10)
+    expect(new Set(exam.map((q) => q.id)).size).toBe(10)
+  })
+
+  test('un intento de 60 sigue los pesos oficiales del examen', () => {
+    expect(countByDomain(buildExam(questions, 60))).toEqual({
+      'IA responsable': 11,
+      'Funcionalidades de Copilot': 17,
+      'Datos y arquitectura': 8,
+      'Ingeniería de prompts y contexto': 8,
+      'Productividad del desarrollador': 8,
+      'Privacidad, exclusiones y salvaguardas': 8,
+    })
+  })
+
   test('no modifica el banco original', () => {
     const before = JSON.stringify(questions)
     buildExam(questions)
     expect(JSON.stringify(questions)).toBe(before)
+  })
+})
+
+describe('pickByWeight', () => {
+  const bank = [
+    ...Array.from({ length: 10 }, (_, i) => ({ id: `a${i}`, domain: 'A' })),
+    ...Array.from({ length: 2 }, (_, i) => ({ id: `b${i}`, domain: 'B' })),
+  ]
+
+  test('respeta la cuota de cada dominio', () => {
+    expect(countByDomain(pickByWeight(bank, 4, { A: 0.5, B: 0.5 }))).toEqual({ A: 2, B: 2 })
+  })
+
+  test('completa con otros dominios si a uno le faltan preguntas', () => {
+    const picked = pickByWeight(bank, 8, { A: 0.5, B: 0.5 })
+    expect(countByDomain(picked)).toEqual({ A: 6, B: 2 })
+    expect(new Set(picked.map((q) => q.id)).size).toBe(8)
+  })
+
+  test('con el banco completo incluye todas las preguntas', () => {
+    expect(pickByWeight(bank, bank.length, { A: 0.5, B: 0.5 })).toHaveLength(bank.length)
   })
 })
 

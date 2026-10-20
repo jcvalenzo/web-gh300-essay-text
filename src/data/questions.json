@@ -1,7 +1,7 @@
 [
   {
     "id": "ghc-001",
-    "domain": "Planes y características",
+    "domain": "Funcionalidades de Copilot",
     "question": "¿GitHub Copilot es gratuito para todos?",
     "options": ["No", "Sí"],
     "answer": [1],
@@ -11,7 +11,7 @@
   },
   {
     "id": "ghc-002",
-    "domain": "Planes y características",
+    "domain": "Funcionalidades de Copilot",
     "question": "¿Qué opción a continuación NO es una forma posible de otorgar acceso a Copilot para miembros de una organización?",
     "options": [
       "Como miembro de una organización, puedes habilitar Copilot directamente desde la configuración de tu cuenta.",
@@ -26,7 +26,7 @@
   },
   {
     "id": "ghc-003",
-    "domain": "Planes y características",
+    "domain": "Funcionalidades de Copilot",
     "question": "¿Qué IDEs no son compatibles con GitHub Copilot?",
     "options": ["NetBeans", "BlueJ", "Code::Blocks", "Visual Studio Code", "Eclipse", "Xcode"],
     "answer": [0, 1, 2],
@@ -36,7 +36,7 @@
   },
   {
     "id": "ghc-004",
-    "domain": "Planes y características",
+    "domain": "Funcionalidades de Copilot",
     "question": "¿Qué comando instala GitHub Copilot CLI?",
     "options": [
       "`npm install -g @github/copilot`",
@@ -66,7 +66,7 @@
   },
   {
     "id": "ghc-006",
-    "domain": "Privacidad, exclusiones y seguridad",
+    "domain": "Privacidad, exclusiones y salvaguardas",
     "question": "¿Cómo puedes excluir archivos específicos de GitHub Copilot?",
     "options": [
       "Editando el archivo .gitignore",
@@ -81,7 +81,7 @@
   },
   {
     "id": "ghc-007",
-    "domain": "Privacidad, exclusiones y seguridad",
+    "domain": "Privacidad, exclusiones y salvaguardas",
     "question": "¿Qué es cierto acerca de las exclusiones de contenido de Copilot?",
     "options": [
       "Las exclusiones de contexto se pueden configurar a nivel de repository y organization",
@@ -112,7 +112,7 @@
   },
   {
     "id": "ghc-009",
-    "domain": "Planes y características",
+    "domain": "Funcionalidades de Copilot",
     "question": "¿Cuál de las siguientes opciones describe cómo usar la API de productividad de GitHub Copilot?",
     "options": [
       "Para recopilar registros de auditoría",
@@ -127,16 +127,16 @@
   },
   {
     "id": "ghc-010",
-    "domain": "Planes y características",
+    "domain": "Funcionalidades de Copilot",
     "question": "¿Cuál de los siguientes integra GitHub Copilot Chat con herramientas externas?",
     "options": [
-      "GitHub Copilot Extensions",
+      "Servidores MCP (Model Context Protocol)",
       "GitHub Copilot Marketplace",
       "GitHub Copilot Integrations",
       "GitHub Copilot Open"
     ],
     "answer": [0],
-    "explanation": "Las GitHub Copilot Extensions (y hoy también los servidores MCP) integran Copilot Chat con herramientas y servicios externos.",
+    "explanation": "Hoy Copilot Chat se integra con herramientas y servicios externos mediante servidores MCP. Las GitHub Copilot Extensions basadas en GitHub Apps, que era la respuesta original de esta pregunta, se retiraron el 10 de noviembre de 2025 en favor de MCP.",
     "docs": "https://docs.github.com/en/enterprise-cloud@latest/copilot/concepts/context/mcp",
     "source": "https://ghcertified.com/es/questions/copilot"
   },
@@ -157,7 +157,7 @@
   },
   {
     "id": "ghc-012",
-    "domain": "Privacidad, exclusiones y seguridad",
+    "domain": "Privacidad, exclusiones y salvaguardas",
     "question": "¿Puede GitHub Copilot utilizar información semántica de un archivo que está excluido por las exclusiones de contenido de GitHub Copilot?",
     "options": [
       "Sí, si la información es proporcionada indirectamente por el IDE.",
@@ -170,7 +170,7 @@
   },
   {
     "id": "ghc-013",
-    "domain": "Privacidad, exclusiones y seguridad",
+    "domain": "Privacidad, exclusiones y salvaguardas",
     "question": "¿Qué ocurre cuando excluyes contenido de GitHub Copilot?",
     "options": [
       "La finalización de código no estará disponible en los archivos afectados.",
@@ -185,7 +185,7 @@
   },
   {
     "id": "ghc-014",
-    "domain": "Planes y características",
+    "domain": "Funcionalidades de Copilot",
     "question": "¿Cuál es la forma más fácil de comenzar con GitHub Copilot?",
     "options": [
       "Solicitar acceso al soporte de GitHub y esperar la aprobación antes de usar GitHub Copilot.",
@@ -215,7 +215,7 @@
   },
   {
     "id": "ghc-016",
-    "domain": "Planes y características",
+    "domain": "Funcionalidades de Copilot",
     "question": "¿Cuál de las siguientes opciones describe mejor GitHub Copilot?",
     "options": [
       "Un asistente de codificación con IA que ayuda a los desarrolladores sugiriendo código y completando fragmentos de código.",
@@ -290,7 +290,7 @@
   },
   {
     "id": "ghc-021",
-    "domain": "Planes y características",
+    "domain": "Funcionalidades de Copilot",
     "question": "¿Qué afirmación describe correctamente GitHub Copilot CLI?",
     "options": [
       "Te permite usar Copilot desde tu terminal para responder preguntas, escribir y depurar código, e interactuar con GitHub.com",
@@ -320,7 +320,7 @@
   },
   {
     "id": "ghc-023",
-    "domain": "Planes y características",
+    "domain": "Funcionalidades de Copilot",
     "question": "¿Cómo se calcula el uso de asientos para GitHub Copilot a nivel empresarial durante un ciclo de facturación?",
     "options": [
       "Número de asientos × (Días transcurridos / Total de días en el ciclo de facturación)",
@@ -335,7 +335,7 @@
   },
   {
     "id": "ghc-024",
-    "domain": "Privacidad, exclusiones y seguridad",
+    "domain": "Privacidad, exclusiones y salvaguardas",
     "question": "¿Cómo funciona la función de coincidencia de código público de GitHub Copilot?",
     "options": [
       "Busca coincidencias comparando sugerencias de código con un índice de repositorios públicos de GitHub, que se actualiza cada pocos meses",
@@ -380,11 +380,11 @@
   },
   {
     "id": "ghc-027",
-    "domain": "Planes y características",
+    "domain": "Funcionalidades de Copilot",
     "question": "¿Cuál de los siguientes NO es un modo seleccionable en GitHub Copilot Chat?",
     "options": ["Ask", "Plan", "Translate", "Agent"],
     "answer": [2],
-    "explanation": "Copilot Chat en VS Code ofrece los modos integrados Ask, Edit, Plan y Agent (además de modos/agentes personalizados). No existe un modo Translate.",
+    "explanation": "Copilot Chat ofrece los modos integrados Ask, Plan y Agent (en algunos IDE también Edit, que se está reemplazando por Agent), además de agentes personalizados. No existe un modo Translate.",
     "docs": "https://code.visualstudio.com/docs/copilot/customization/custom-chat-modes#_builtin-chat-modes",
     "source": "https://ghcertified.com/es/questions/copilot"
   },
@@ -416,7 +416,7 @@
   },
   {
     "id": "ghc-030",
-    "domain": "Planes y características",
+    "domain": "Funcionalidades de Copilot",
     "question": "¿Qué son las acciones inteligentes?",
     "options": [
       "Las acciones inteligentes son tareas comunes y predefinidas, como explicar código, corregir código o generar pruebas y documentación, que pueden ser realizadas por GitHub Copilot Chat sin necesidad de redactar un aviso para ellas.",
@@ -430,7 +430,7 @@
   },
   {
     "id": "ghc-031",
-    "domain": "Planes y características",
+    "domain": "Funcionalidades de Copilot",
     "question": "¿Qué características están disponibles en GitHub Copilot y GitHub Copilot Chat?",
     "options": [
       "Completaciones de líneas de código, chat en línea, vista de chat, chat rápido, acciones inteligentes",
@@ -458,37 +458,6 @@
     "source": "https://ghcertified.com/es/questions/copilot"
   },
   {
-    "id": "ghc-033",
-    "domain": "Planes y características",
-    "question": "¿Para qué se utiliza un alias al usar GitHub Copilot?",
-    "options": [
-      "Usar un alias permite que GitHub Copilot CLI ejecute automáticamente comandos en la línea de comandos.",
-      "Usar un alias te permite indicar en los commits de Git que GitHub Copilot realizó los cambios.",
-      "Usar un alias permite que GitHub revise y cree pull requests en tu nombre."
-    ],
-    "answer": [0],
-    "explanation": "En la antigua extensión `gh copilot`, configurar el alias (`ghcs`) permitía que Copilot ejecutara directamente los comandos sugeridos en la terminal.",
-    "docs": "https://learn.microsoft.com/en-us/training/modules/github-copilot-across-environments/5-git-hub-copilot-for-the-command-line",
-    "source": "https://ghcertified.com/es/questions/copilot"
-  },
-  {
-    "id": "ghc-034",
-    "domain": "Datos y arquitectura",
-    "question": "¿Cuáles afirmaciones son correctas sobre GitHub Copilot CLI?",
-    "options": [
-      "Las indicaciones no se retienen, mientras que los análisis de uso se retienen de forma predeterminada.",
-      "Es posible optar por no participar en los análisis de uso opcionales.",
-      "Las respuestas generadas por Copilot CLI pueden revisarse después de cada sugerencia.",
-      "Tanto las indicaciones como los análisis de uso se retienen de forma predeterminada.",
-      "No es posible optar por no participar en los análisis de uso opcionales porque son anónimos.",
-      "GitHub Copilot CLI solo puede explicar o sugerir comandos, pero no ejecutarlos en nombre del usuario."
-    ],
-    "answer": [0, 1, 2],
-    "explanation": "En Copilot CLI los prompts no se retienen, mientras que la analítica de uso sí se recopila por defecto y puedes desactivarla. Puedes revisar cada sugerencia y Copilot puede ejecutar comandos en tu nombre (con aprobación). Las indicaciones no se retienen de forma predeterminada.",
-    "docs": "https://learn.microsoft.com/en-us/training/modules/github-copilot-across-environments/5-git-hub-copilot-for-the-command-line",
-    "source": "https://ghcertified.com/es/questions/copilot"
-  },
-  {
     "id": "ghc-035",
     "domain": "IA responsable",
     "question": "Estás desarrollando una aplicación en Kotlin. ¿Qué debes tener en cuenta al usar GitHub Copilot?",
@@ -505,7 +474,7 @@
   },
   {
     "id": "ghc-036",
-    "domain": "Privacidad, exclusiones y seguridad",
+    "domain": "Privacidad, exclusiones y salvaguardas",
     "question": "¿Dónde puedes encontrar información sobre preocupaciones relacionadas con seguridad, propiedad intelectual y privacidad respecto al uso de GitHub Copilot?",
     "options": [
       "GitHub Copilot Trust Center",
@@ -521,7 +490,7 @@
   },
   {
     "id": "ghc-037",
-    "domain": "Planes y características",
+    "domain": "Funcionalidades de Copilot",
     "question": "¿Qué planes de suscripción de GitHub Copilot admiten instrucciones personalizadas a nivel de organización?",
     "options": [
       "Todos los planes que incluyen GitHub Copilot",
@@ -621,7 +590,7 @@
   },
   {
     "id": "ext-006",
-    "domain": "Planes y características",
+    "domain": "Funcionalidades de Copilot",
     "question": "¿Qué funcionalidad permite asignar un issue a Copilot para que trabaje de forma autónoma en un entorno en la nube y abra un pull request?",
     "options": ["Copilot coding agent", "Copilot code review", "Next edit suggestions", "Copilot Chat en modo Ask"],
     "answer": [0],
@@ -631,7 +600,7 @@
   },
   {
     "id": "ext-007",
-    "domain": "Planes y características",
+    "domain": "Funcionalidades de Copilot",
     "question": "¿Qué es correcto sobre Copilot code review?",
     "options": [
       "Revisa un pull request y deja comentarios con sugerencias de cambios que puedes aplicar",
@@ -646,7 +615,7 @@
   },
   {
     "id": "ext-008",
-    "domain": "Planes y características",
+    "domain": "Funcionalidades de Copilot",
     "question": "¿Qué hacen las Next Edit Suggestions (NES) en VS Code?",
     "options": [
       "Predicen la ubicación y el contenido de la siguiente edición que probablemente harás",
@@ -661,7 +630,7 @@
   },
   {
     "id": "ext-009",
-    "domain": "Planes y características",
+    "domain": "Funcionalidades de Copilot",
     "question": "¿Dónde puede un propietario de organización revisar eventos como la asignación de licencias o cambios en la configuración de Copilot?",
     "options": [
       "En el audit log de la organización",
@@ -676,7 +645,7 @@
   },
   {
     "id": "ext-010",
-    "domain": "Planes y características",
+    "domain": "Funcionalidades de Copilot",
     "question": "¿Qué permite el Model Context Protocol (MCP) en GitHub Copilot?",
     "options": [
       "Conectar Copilot con herramientas y fuentes de datos externas mediante servidores MCP",
@@ -893,7 +862,7 @@
   },
   {
     "id": "ext-025",
-    "domain": "Privacidad, exclusiones y seguridad",
+    "domain": "Privacidad, exclusiones y salvaguardas",
     "question": "¿Qué ocurre si la política 'Suggestions matching public code' está configurada en Block?",
     "options": [
       "Copilot no muestra sugerencias que coinciden con código público de GitHub",
@@ -908,7 +877,7 @@
   },
   {
     "id": "ext-026",
-    "domain": "Privacidad, exclusiones y seguridad",
+    "domain": "Privacidad, exclusiones y salvaguardas",
     "question": "¿Qué protección contractual ofrece GitHub a clientes de Copilot Business y Enterprise?",
     "options": [
       "Indemnización por reclamos de propiedad intelectual, cuando el filtro de código público está habilitado",
@@ -923,7 +892,7 @@
   },
   {
     "id": "ext-027",
-    "domain": "Privacidad, exclusiones y seguridad",
+    "domain": "Privacidad, exclusiones y salvaguardas",
     "question": "¿En qué planes está disponible la exclusión de contenido de Copilot?",
     "options": [
       "Copilot Business y Copilot Enterprise",
@@ -938,7 +907,7 @@
   },
   {
     "id": "ext-028",
-    "domain": "Privacidad, exclusiones y seguridad",
+    "domain": "Privacidad, exclusiones y salvaguardas",
     "question": "¿Cómo se especifican las rutas a excluir en la configuración de exclusión de contenido de un repositorio?",
     "options": [
       "Como una lista de rutas con patrones tipo fnmatch, por ejemplo `- \"/secrets/**\"`",
@@ -949,6 +918,1041 @@
     "answer": [0],
     "explanation": "En Settings > Copilot > Content exclusion del repositorio se escribe una lista YAML de rutas que admite patrones fnmatch (por ejemplo `*.env` o `/scripts/**`).",
     "docs": "https://docs.github.com/en/copilot/how-tos/configure-content-exclusion/exclude-content-from-copilot",
+    "source": "original"
+  },
+  {
+    "id": "ms-001",
+    "domain": "Funcionalidades de Copilot",
+    "question": "¿GitHub Copilot es gratuito?",
+    "options": [
+      "No, es un servicio que puede registrarse para que los alumnos lo usen gratis, pero actualmente cuesta 10 dólares al mes.",
+      "Sí, es gratuito para cualquier uso sin límites.",
+      "No, solo está disponible con una licencia de GitHub Enterprise.",
+      "Sí, pero solo para repositorios públicos."
+    ],
+    "answer": [0],
+    "explanation": "GitHub Copilot cuesta 10 USD al mes, pero es gratuito para estudiantes comprobados, profesores y mantenedores de código abierto. Nota: hoy existe además el plan Copilot Free, con un número limitado de completaciones y mensajes de chat al mes.",
+    "docs": "https://github.com/features/copilot/plans",
+    "source": "https://learn.microsoft.com/es-es/credentials/certifications/github-copilot/?practice-assessment-type=certification"
+  },
+  {
+    "id": "ms-002",
+    "domain": "Funcionalidades de Copilot",
+    "question": "¿Cuál es la diferencia entre GitHub Copilot Business y GitHub Copilot Enterprise?",
+    "options": [
+      "GitHub Copilot Enterprise tiene una capa adicional de personalización, ya que la organización utiliza su propio código base para entrenar a GitHub Copilot.",
+      "GitHub Copilot Business incluye Copilot Chat y Enterprise no.",
+      "GitHub Copilot Enterprise solo funciona en Visual Studio, mientras que Business funciona en cualquier IDE.",
+      "No hay diferencias; solo cambia el número máximo de licencias."
+    ],
+    "answer": [0],
+    "explanation": "Enterprise permite a las organizaciones entrenar a Copilot con su propio código base para obtener sugerencias personalizadas. Nota: hoy Copilot Enterprise aprovecha el código de la organización como contexto (indexación de repositorios y Copilot Spaces) más que para reentrenar el modelo.",
+    "docs": "https://learn.microsoft.com/es-es/training/modules/introduction-to-github-copilot-enterprise/",
+    "source": "https://learn.microsoft.com/es-es/credentials/certifications/github-copilot/?practice-assessment-type=certification"
+  },
+  {
+    "id": "ms-003",
+    "domain": "Funcionalidades de Copilot",
+    "question": "¿Cuál de estas características avanzadas no está disponible en GitHub Copilot Enterprise, pero estaba disponible en GitHub Copilot Business?",
+    "options": [
+      "Ninguno de los anteriores",
+      "Búsqueda y resúmenes de documentación de Copilot mediante Docsets",
+      "Resúmenes de solicitudes de incorporación de cambios de Copilot",
+      "Copilot Chat en GitHub.com"
+    ],
+    "answer": [0],
+    "explanation": "Todas las características mencionadas están disponibles en GitHub Copilot Enterprise. Nota: las knowledge bases (Docsets) se retiraron el 1 de noviembre de 2025 y fueron reemplazadas por Copilot Spaces.",
+    "docs": "https://learn.microsoft.com/es-es/training/modules/introduction-to-github-copilot-enterprise/",
+    "source": "https://learn.microsoft.com/es-es/credentials/certifications/github-copilot/?practice-assessment-type=certification"
+  },
+  {
+    "id": "ms-004",
+    "domain": "Funcionalidades de Copilot",
+    "question": "Describir el propósito y las ventajas de los resúmenes de solicitudes de incorporación de cambios de Copilot en GitHub Copilot Enterprise.",
+    "options": [
+      "Ayudan a generar automáticamente información general concisa de las solicitudes de incorporación de cambios en función de los cambios de código, mejorando la comprensión y acelerando los procesos de revisión.",
+      "Aprueban y combinan automáticamente las solicitudes de incorporación de cambios que superan las pruebas.",
+      "Reemplazan la revisión humana de código asignando revisores automáticamente.",
+      "Traducen la descripción de la solicitud de incorporación de cambios a otros idiomas."
+    ],
+    "answer": [0],
+    "explanation": "Los resúmenes de solicitudes de incorporación de cambios generan automáticamente información general concisa de los cambios de código, lo que ayuda a los revisores a comprender rápidamente el ámbito y el impacto de los cambios.",
+    "docs": "https://learn.microsoft.com/es-es/training/modules/introduction-to-github-copilot-enterprise/",
+    "source": "https://learn.microsoft.com/es-es/credentials/certifications/github-copilot/?practice-assessment-type=certification"
+  },
+  {
+    "id": "ms-005",
+    "domain": "Funcionalidades de Copilot",
+    "question": "¿Cómo pueden las organizaciones administrar y usar conjuntos de documentos en Copilot Enterprise para adaptar sugerencias de código y mejorar los flujos de trabajo de desarrollo?",
+    "options": [
+      "Mediante el uso de conjuntos de documentos para crear colecciones personalizadas de código interno y documentación.",
+      "Subiendo archivos PDF al panel de facturación de la organización.",
+      "Configurando reglas de protección de ramas en cada repositorio.",
+      "Instalando una extensión distinta del IDE para cada conjunto de documentos."
+    ],
+    "answer": [0],
+    "explanation": "Docsets permite a las organizaciones crear colecciones personalizadas de código interno y documentación, lo que permite a Copilot proporcionar sugerencias más relevantes. Nota: las knowledge bases (Docsets) se retiraron el 1 de noviembre de 2025 y fueron reemplazadas por Copilot Spaces.",
+    "docs": "https://learn.microsoft.com/es-es/training/modules/introduction-to-github-copilot-enterprise/",
+    "source": "https://learn.microsoft.com/es-es/credentials/certifications/github-copilot/?practice-assessment-type=certification"
+  },
+  {
+    "id": "ms-006",
+    "domain": "Productividad del desarrollador",
+    "question": "¿Cómo propone GitHub Copilot Chat correcciones para errores en el código?",
+    "options": [
+      "Al sugerir fragmentos de código y soluciones en función del contexto del error o problema.",
+      "Al reescribir automáticamente todo el archivo sin intervención del usuario.",
+      "Al abrir un issue en el repositorio para que otro desarrollador lo resuelva.",
+      "Al buscar la respuesta en foros públicos y copiarla tal cual."
+    ],
+    "answer": [0],
+    "explanation": "El chat de Copilot de GitHub analiza el contexto del error y proporciona fragmentos de código y soluciones pertinentes.",
+    "docs": "https://learn.microsoft.com/es-es/training/modules/get-started-github-copilot/",
+    "source": "https://learn.microsoft.com/es-es/credentials/certifications/github-copilot/?practice-assessment-type=certification"
+  },
+  {
+    "id": "ms-007",
+    "domain": "Ingeniería de prompts y contexto",
+    "question": "¿Cuál es el propósito de usar participantes de chat, comandos de barra y variables de chat en Copilot Chat de GitHub?",
+    "options": [
+      "Ayudan a GitHub Copilot Chat a comprender el contexto y la intención de la pregunta.",
+      "Permiten cambiar el tema visual del editor.",
+      "Sirven para ejecutar el código directamente en producción.",
+      "Reducen el costo de la suscripción de Copilot."
+    ],
+    "answer": [0],
+    "explanation": "Estas características proporcionan contexto y especificidad adicionales, lo que permite a Copilot Chat generar respuestas más precisas y relevantes.",
+    "docs": "https://learn.microsoft.com/es-es/training/modules/get-started-github-copilot/",
+    "source": "https://learn.microsoft.com/es-es/credentials/certifications/github-copilot/?practice-assessment-type=certification"
+  },
+  {
+    "id": "ms-008",
+    "domain": "Productividad del desarrollador",
+    "question": "¿Cómo puede el chat de Copilot de GitHub generar explicaciones para código desconocido?",
+    "options": [
+      "Mediante la generación de descripciones de lenguaje natural de la funcionalidad y el propósito del código.",
+      "Mediante la ejecución del código paso a paso en un depurador remoto.",
+      "Mediante la búsqueda del autor original del código en el historial de Git.",
+      "Mediante la conversión del código a un diagrama UML."
+    ],
+    "answer": [0],
+    "explanation": "Copilot Chat puede analizar el código y proporcionar explicaciones legibles de su funcionalidad y propósito.",
+    "docs": "https://learn.microsoft.com/es-es/training/modules/get-started-github-copilot/",
+    "source": "https://learn.microsoft.com/es-es/credentials/certifications/github-copilot/?practice-assessment-type=certification"
+  },
+  {
+    "id": "ms-009",
+    "domain": "Productividad del desarrollador",
+    "question": "¿Cómo puede ayudar el chat de Copilot de GitHub al encontrar un error en el código?",
+    "options": [
+      "Puede explicar la causa del error y sugerir maneras de corregirlo.",
+      "Puede revertir automáticamente el último commit.",
+      "Puede ocultar el error para que no aparezca en la consola.",
+      "Solo puede indicar la línea del error, sin explicarlo."
+    ],
+    "answer": [0],
+    "explanation": "El chat de Copilot de GitHub puede analizar el contexto de error y proporcionar explicaciones y sugerencias para corregirlo.",
+    "docs": "https://learn.microsoft.com/es-es/training/modules/get-started-github-copilot/",
+    "source": "https://learn.microsoft.com/es-es/credentials/certifications/github-copilot/?practice-assessment-type=certification"
+  },
+  {
+    "id": "ms-010",
+    "domain": "Productividad del desarrollador",
+    "question": "¿Cómo se puede usar el chat de Copilot de GitHub en el contexto de la documentación del proyecto?",
+    "options": [
+      "Para generar secciones específicas de la documentación del proyecto, como la información general del proyecto, los requisitos, las restricciones, las dependencias y el resumen.",
+      "Para publicar automáticamente la documentación en un sitio web.",
+      "Solo para corregir la ortografía del archivo README.",
+      "No se puede usar para documentación, solo para código."
+    ],
+    "answer": [0],
+    "explanation": "El chat de GitHub Copilot puede ayudar a crear varias secciones de documentación del proyecto mediante la generación de contenido basado en el contexto del proyecto y las solicitudes del usuario.",
+    "docs": "https://learn.microsoft.com/es-es/training/modules/generate-documentation-using-github-copilot-tools/",
+    "source": "https://learn.microsoft.com/es-es/credentials/certifications/github-copilot/?practice-assessment-type=certification"
+  },
+  {
+    "id": "ms-011",
+    "domain": "Productividad del desarrollador",
+    "question": "¿Cómo puede ayudar GitHub Copilot Chat a generar documentación de código en línea?",
+    "options": [
+      "Mediante la generación de comentarios de código insertados basados en instrucciones de lenguaje natural.",
+      "Mediante la eliminación de los comentarios existentes para reducir el tamaño del archivo.",
+      "Mediante la generación de un PDF con capturas del código.",
+      "Mediante la traducción automática de nombres de variables."
+    ],
+    "answer": [0],
+    "explanation": "El chat de GitHub Copilot puede analizar el código y generar comentarios en línea basados en indicaciones de lenguaje natural, mejorando la legibilidad.",
+    "docs": "https://learn.microsoft.com/es-es/training/modules/generate-documentation-using-github-copilot-tools/",
+    "source": "https://learn.microsoft.com/es-es/credentials/certifications/github-copilot/?practice-assessment-type=certification"
+  },
+  {
+    "id": "ms-012",
+    "domain": "Productividad del desarrollador",
+    "question": "¿Cuáles son las dos maneras de generar finalizaciones de línea de código mediante GitHub Copilot?",
+    "options": [
+      "Genere finalizaciones a partir de un comentario y de una línea de código.",
+      "Genere finalizaciones a partir de un commit y de un issue.",
+      "Genere finalizaciones a partir de la terminal y del explorador de archivos.",
+      "Genere finalizaciones a partir de una imagen y de un archivo binario."
+    ],
+    "answer": [0],
+    "explanation": "Copilot puede generar finalizaciones basadas en comentarios que describen la intención o desde líneas de código parcialmente escritas.",
+    "docs": "https://learn.microsoft.com/es-es/training/modules/github-copilot-across-environments/",
+    "source": "https://learn.microsoft.com/es-es/credentials/certifications/github-copilot/?practice-assessment-type=certification"
+  },
+  {
+    "id": "ms-013",
+    "domain": "Funcionalidades de Copilot",
+    "question": "¿Qué es el texto fantasma en GitHub Copilot?",
+    "options": [
+      "Texto fantasma en GitHub Copilot son sugerencias que aparecen en el editor de texto a medida que escribe.",
+      "Código que Copilot elimina sin avisar.",
+      "Comentarios ocultos que Copilot agrega para su propio uso.",
+      "Texto que solo aparece en el modo oscuro del editor."
+    ],
+    "answer": [0],
+    "explanation": "El texto fantasma es una característica de GitHub Copilot que proporciona sugerencias de código en tiempo real a medida que escribe. Estas sugerencias aparecen como texto atenuado en el editor, lo que le permite obtener una vista previa y aceptar o modificar fácilmente el código propuesto.",
+    "docs": "https://code.visualstudio.com/docs/copilot/ai-powered-suggestions",
+    "source": "https://learn.microsoft.com/es-es/credentials/certifications/github-copilot/?practice-assessment-type=certification"
+  },
+  {
+    "id": "ms-014",
+    "domain": "Ingeniería de prompts y contexto",
+    "question": "¿Para qué se usan los comandos de barra oblicua en GitHub Copilot?",
+    "options": [
+      "Los comandos de barra oblicua son accesos directos para resolver rápidamente las tareas comunes de desarrollo dentro del panel de chat o en línea.",
+      "Son comandos para comentar líneas de código.",
+      "Sirven para navegar entre carpetas del proyecto.",
+      "Se usan para configurar la cuenta de GitHub."
+    ],
+    "answer": [0],
+    "explanation": "Los comandos de barra diagonal en GitHub Copilot proporcionan acceso rápido a funcionalidades específicas, lo que permite a los desarrolladores realizar tareas comunes de forma eficaz.",
+    "docs": "https://learn.microsoft.com/es-es/training/modules/get-started-github-copilot/",
+    "source": "https://learn.microsoft.com/es-es/credentials/certifications/github-copilot/?practice-assessment-type=certification"
+  },
+  {
+    "id": "ms-015",
+    "domain": "Ingeniería de prompts y contexto",
+    "question": "¿Cuáles son las ventajas de usar agentes como \"@terminal\" o \"@workspace\" al interactuar con GitHub Copilot?",
+    "options": [
+      "Los agentes de Visual Studio Code le ayudan a formular preguntas dentro de un contexto específico, lo que permite respuestas más precisas y relevantes de GitHub Copilot.",
+      "Permiten que Copilot ejecute comandos con permisos de administrador.",
+      "Desactivan el filtrado de contenido para obtener respuestas más rápidas.",
+      "Solo sirven para cambiar el idioma de las respuestas."
+    ],
+    "answer": [0],
+    "explanation": "El uso de agentes como \"@terminal\" o \"@workspace\" permite a los desarrolladores especificar el contexto de sus consultas, lo que permite a GitHub Copilot proporcionar respuestas más precisas y relevantes.",
+    "docs": "https://learn.microsoft.com/es-es/training/modules/github-copilot-across-environments/",
+    "source": "https://learn.microsoft.com/es-es/credentials/certifications/github-copilot/?practice-assessment-type=certification"
+  },
+  {
+    "id": "ms-016",
+    "domain": "Funcionalidades de Copilot",
+    "question": "¿Cómo puede aceptar las sugerencias de GitHub Copilot?",
+    "options": [
+      "Presione la tecla Tab.",
+      "Presione la tecla Esc.",
+      "Haga doble clic sobre la sugerencia.",
+      "Guarde el archivo con Ctrl+S."
+    ],
+    "answer": [0],
+    "explanation": "Presionar la tecla Tab acepta las sugerencias de Copilot.",
+    "docs": "https://code.visualstudio.com/docs/copilot/ai-powered-suggestions",
+    "source": "https://learn.microsoft.com/es-es/credentials/certifications/github-copilot/?practice-assessment-type=certification"
+  },
+  {
+    "id": "ms-017",
+    "domain": "Datos y arquitectura",
+    "question": "¿Cómo determina GitHub Copilot las sugerencias de finalización de código que proporciona?",
+    "options": [
+      "Basado en el contexto de código en el editor.",
+      "De forma aleatoria entre fragmentos predefinidos.",
+      "Según la popularidad del repositorio.",
+      "Copiando el código del último proyecto que abrió."
+    ],
+    "answer": [0],
+    "explanation": "Copilot analiza el contexto del código en el editor, incluido el código y los comentarios circundantes, para generar sugerencias pertinentes.",
+    "docs": "https://learn.microsoft.com/es-es/training/modules/github-copilot-across-environments/",
+    "source": "https://learn.microsoft.com/es-es/credentials/certifications/github-copilot/?practice-assessment-type=certification"
+  },
+  {
+    "id": "ms-018",
+    "domain": "Funcionalidades de Copilot",
+    "question": "¿Cómo usa Copilot el código base de una organización y los conocimientos internos para mejorar la productividad y la colaboración?",
+    "options": [
+      "Al adaptar la asistencia de codificación, responder preguntas y sugerir código alineado con los estándares y procedimientos recomendados de la organización.",
+      "Al publicar el código interno de la organización para que otros lo reutilicen.",
+      "Al bloquear el acceso a los repositorios que no siguen los estándares.",
+      "Al reemplazar la documentación interna por respuestas genéricas."
+    ],
+    "answer": [0],
+    "explanation": "Copilot Enterprise mejora la productividad al alinearse con los estándares de la organización y los procedimientos recomendados.",
+    "docs": "https://learn.microsoft.com/es-es/training/modules/introduction-to-github-copilot-enterprise/",
+    "source": "https://learn.microsoft.com/es-es/credentials/certifications/github-copilot/?practice-assessment-type=certification"
+  },
+  {
+    "id": "ms-019",
+    "domain": "Datos y arquitectura",
+    "question": "¿Cómo funciona GitHub Copilot?",
+    "options": [
+      "GitHub Copilot usa solicitudes y texto de lenguaje natural que usted escribe para proporcionar sugerencias de codificación.",
+      "GitHub Copilot compila su código y corrige los errores de compilación.",
+      "GitHub Copilot busca coincidencias exactas en Stack Overflow.",
+      "GitHub Copilot ejecuta sus pruebas y elige la implementación más rápida."
+    ],
+    "answer": [0],
+    "explanation": "GitHub Copilot usa mensajes de lenguaje natural y contexto del código para generar sugerencias.",
+    "docs": "https://learn.microsoft.com/es-es/training/modules/introduction-prompt-engineering-with-github-copilot/",
+    "source": "https://learn.microsoft.com/es-es/credentials/certifications/github-copilot/?practice-assessment-type=certification"
+  },
+  {
+    "id": "ms-020",
+    "domain": "Datos y arquitectura",
+    "question": "¿Cómo aprende GitHub Copilot de sus mensajes?",
+    "options": [
+      "Utiliza varios enfoques, como el aprendizaje de disparo cero, uno y pocos disparos.",
+      "Reentrena el modelo cada vez que usted envía un mensaje.",
+      "Guarda sus mensajes para entrenar un modelo personal.",
+      "No usa sus mensajes; solo usa el nombre del archivo."
+    ],
+    "answer": [0],
+    "explanation": "Copilot usa el aprendizaje de cero ejemplos, un solo ejemplo y pocos ejemplos para adaptarse a diferentes escenarios y generar código relevante.",
+    "docs": "https://learn.microsoft.com/es-es/training/modules/introduction-prompt-engineering-with-github-copilot/",
+    "source": "https://learn.microsoft.com/es-es/credentials/certifications/github-copilot/?practice-assessment-type=certification"
+  },
+  {
+    "id": "ms-021",
+    "domain": "Datos y arquitectura",
+    "question": "¿Cuál de las siguientes no es un paso en el proceso de GitHub Copilot que procesa el mensaje de un usuario en una sugerencia de código?",
+    "options": [
+      "Análisis estadístico y reconocimiento de patrones",
+      "Recopilación de contexto del editor",
+      "Construcción del prompt",
+      "Filtrado y posprocesamiento de la respuesta"
+    ],
+    "answer": [0],
+    "explanation": "Copilot no se basa en el análisis estadístico tradicional y el reconocimiento de patrones, sino que usa redes neuronales y modelos de lenguaje.",
+    "docs": "https://learn.microsoft.com/es-es/training/modules/introduction-prompt-engineering-with-github-copilot/",
+    "source": "https://learn.microsoft.com/es-es/credentials/certifications/github-copilot/?practice-assessment-type=certification"
+  },
+  {
+    "id": "ms-022",
+    "domain": "Datos y arquitectura",
+    "question": "¿Cómo mejora la técnica Fill-in-the-Middle (FIM) de GitHub Copilot sus sugerencias de código?",
+    "options": [
+      "Al permitir que Copilot considere un contexto más amplio del código que rodea la posición del cursor",
+      "Al rellenar automáticamente los archivos vacíos del proyecto",
+      "Al completar solo el final del archivo",
+      "Al eliminar el código duplicado del medio del archivo"
+    ],
+    "answer": [0],
+    "explanation": "FIM permite a Copilot tener en cuenta el código antes y después del cursor, lo que mejora la precisión de la sugerencia.",
+    "docs": "https://learn.microsoft.com/es-es/training/modules/introduction-prompt-engineering-with-github-copilot/",
+    "source": "https://learn.microsoft.com/es-es/credentials/certifications/github-copilot/?practice-assessment-type=certification"
+  },
+  {
+    "id": "ms-023",
+    "domain": "Datos y arquitectura",
+    "question": "En el flujo de salida de GitHub Copilot, ¿cuál de las siguientes acciones puede producirse después de que se genere la sugerencia de código?",
+    "options": [
+      "La sugerencia se presenta al usuario para su revisión y aceptación.",
+      "La sugerencia se confirma automáticamente en el repositorio.",
+      "La sugerencia se envía a un revisor humano de GitHub.",
+      "La sugerencia se despliega directamente en producción."
+    ],
+    "answer": [0],
+    "explanation": "Se presentan sugerencias al usuario para su revisión y aceptación antes de la integración.",
+    "docs": "https://learn.microsoft.com/es-es/training/modules/introduction-prompt-engineering-with-github-copilot/",
+    "source": "https://learn.microsoft.com/es-es/credentials/certifications/github-copilot/?practice-assessment-type=certification"
+  },
+  {
+    "id": "ms-024",
+    "domain": "Funcionalidades de Copilot",
+    "question": "¿Qué ocurre cuando GitHub Copilot genera más de una sugerencia de finalización de código?",
+    "options": [
+      "Permite a los desarrolladores revisar cada sugerencia seleccionando las flechas izquierda o derecha.",
+      "Combina todas las sugerencias en un solo bloque de código.",
+      "Muestra solo la primera y descarta el resto.",
+      "Pide al desarrollador que vote por la mejor sugerencia en GitHub.com."
+    ],
+    "answer": [0],
+    "explanation": "Los desarrolladores pueden recorrer varias sugerencias mediante flechas izquierda y derecha para seleccionar la más adecuada.",
+    "docs": "https://learn.microsoft.com/es-es/training/modules/github-copilot-across-environments/",
+    "source": "https://learn.microsoft.com/es-es/credentials/certifications/github-copilot/?practice-assessment-type=certification"
+  },
+  {
+    "id": "ms-025",
+    "domain": "Productividad del desarrollador",
+    "question": "¿Cuál es el propósito de revisar y corregir la salida generada por GitHub Copilot Chat?",
+    "options": [
+      "Para garantizar la precisión e integridad de las explicaciones y la documentación generadas.",
+      "Para aumentar el número de sugerencias que Copilot genera por minuto.",
+      "Para que Copilot recuerde la corrección en futuras sesiones de otros usuarios.",
+      "No es necesario; la salida de Copilot Chat siempre es correcta."
+    ],
+    "answer": [0],
+    "explanation": "Revisar y corregir la salida garantiza que las explicaciones y la documentación sean precisas y completas.",
+    "docs": "https://learn.microsoft.com/es-es/training/modules/generate-documentation-using-github-copilot-tools/",
+    "source": "https://learn.microsoft.com/es-es/credentials/certifications/github-copilot/?practice-assessment-type=certification"
+  },
+  {
+    "id": "ms-026",
+    "domain": "Ingeniería de prompts y contexto",
+    "question": "Identifique qué instrucción es válida y seleccione la respuesta correcta:",
+    "options": [
+      "Una solicitud, que sería nuestra entrada, es una colección de instrucciones o directrices que indican a nuestro copiloto qué generar.",
+      "Una solicitud es el código que Copilot genera como salida.",
+      "Una solicitud es un archivo de configuración que define el tema del editor.",
+      "Una solicitud es la licencia que habilita Copilot en la organización."
+    ],
+    "answer": [0],
+    "explanation": "Las indicaciones son entradas que guían a Copilot para generar sugerencias pertinentes.",
+    "docs": "https://learn.microsoft.com/es-es/training/modules/introduction-prompt-engineering-with-github-copilot/",
+    "source": "https://learn.microsoft.com/es-es/credentials/certifications/github-copilot/?practice-assessment-type=certification"
+  },
+  {
+    "id": "ms-027",
+    "domain": "Ingeniería de prompts y contexto",
+    "question": "¿De qué depende la calidad de la salida de GitHub Copilot?",
+    "options": [
+      "La calidad del diseño del aviso.",
+      "La velocidad de la conexión a internet.",
+      "El tamaño de la pantalla del desarrollador.",
+      "El número de estrellas del repositorio."
+    ],
+    "answer": [0],
+    "explanation": "Las indicaciones claras y bien diseñadas conducen a mejores sugerencias.",
+    "docs": "https://learn.microsoft.com/es-es/training/modules/introduction-prompt-engineering-with-github-copilot/",
+    "source": "https://learn.microsoft.com/es-es/credentials/certifications/github-copilot/?practice-assessment-type=certification"
+  },
+  {
+    "id": "ms-028",
+    "domain": "Datos y arquitectura",
+    "question": "¿Cuál es el rol de modelos de lenguaje grande (LLM) en GitHub Copilot?",
+    "options": [
+      "Para generar sugerencias de código compatibles con el contexto y responder a las solicitudes",
+      "Para compilar el código en distintas plataformas",
+      "Para almacenar el historial de commits del repositorio",
+      "Para administrar las licencias de los usuarios"
+    ],
+    "answer": [0],
+    "explanation": "Las LLM generan sugerencias de código compatibles con el contexto y responden a las solicitudes del usuario.",
+    "docs": "https://learn.microsoft.com/es-es/training/modules/introduction-prompt-engineering-with-github-copilot/",
+    "source": "https://learn.microsoft.com/es-es/credentials/certifications/github-copilot/?practice-assessment-type=certification"
+  },
+  {
+    "id": "ms-029",
+    "domain": "Ingeniería de prompts y contexto",
+    "question": "¿Cuál es la importancia del contexto y la intención al desarrollar mensajes de Chat de GitHub Copilot?",
+    "options": [
+      "Especifican el ámbito que GitHub Copilot debe examinar y el objetivo que se va a lograr.",
+      "Determinan el idioma de la interfaz de Visual Studio Code.",
+      "Definen cuántas licencias consume cada mensaje.",
+      "No tienen importancia; Copilot ignora el contexto del mensaje."
+    ],
+    "answer": [0],
+    "explanation": "El contexto y la intención guían a Copilot para ofrecer sugerencias relevantes.",
+    "docs": "https://learn.microsoft.com/es-es/training/modules/introduction-prompt-engineering-with-github-copilot/",
+    "source": "https://learn.microsoft.com/es-es/credentials/certifications/github-copilot/?practice-assessment-type=certification"
+  },
+  {
+    "id": "ms-030",
+    "domain": "Ingeniería de prompts y contexto",
+    "question": "¿Cuál es una práctica recomendada para mejorar el rendimiento del chat de GitHub Copilot?",
+    "options": [
+      "Limitar la solicitud a preguntas o tareas de codificación para mejorar la calidad de salida del modelo.",
+      "Escribir solicitudes lo más largas posible con temas variados.",
+      "Hacer varias preguntas no relacionadas en el mismo mensaje.",
+      "Cerrar todos los archivos del proyecto antes de preguntar."
+    ],
+    "answer": [0],
+    "explanation": "Al centrarse en las preguntas o tareas de codificación específicas, los desarrolladores pueden ayudar a GitHub Copilot Chat a generar respuestas más precisas y relevantes.",
+    "docs": "https://learn.microsoft.com/es-es/training/modules/introduction-prompt-engineering-with-github-copilot/",
+    "source": "https://learn.microsoft.com/es-es/credentials/certifications/github-copilot/?practice-assessment-type=certification"
+  },
+  {
+    "id": "ms-031",
+    "domain": "Ingeniería de prompts y contexto",
+    "question": "¿Cuál es la mejor manera de proporcionar contexto a GitHub Copilot para obtener mejores sugerencias de código?",
+    "options": [
+      "Al proporcionar nombres de función significativos, comentarios de función específicos y tener archivos relacionados abiertos en el editor.",
+      "Al usar nombres de variables de una sola letra para ahorrar tokens.",
+      "Al cerrar todos los archivos excepto el actual.",
+      "Al eliminar los comentarios del código."
+    ],
+    "answer": [0],
+    "explanation": "Usar nombres de función claros, comentarios y abrir archivos relacionados ayuda a Copilot a comprender mejor la estructura y la intención del proyecto.",
+    "docs": "https://learn.microsoft.com/es-es/training/modules/introduction-prompt-engineering-with-github-copilot/",
+    "source": "https://learn.microsoft.com/es-es/credentials/certifications/github-copilot/?practice-assessment-type=certification"
+  },
+  {
+    "id": "ms-032",
+    "domain": "Ingeniería de prompts y contexto",
+    "question": "¿Cómo puede un desarrollador optimizar su experiencia al interactuar con GitHub Copilot a través del chat?",
+    "options": [
+      "Mediante el uso de participantes de chat, comandos de barra diagonal, variables de chat y ser específicos en los mensajes.",
+      "Mediante mensajes cortos y ambiguos para que Copilot proponga más alternativas.",
+      "Mediante el reinicio del editor antes de cada pregunta.",
+      "Mediante el uso exclusivo de mayúsculas en los mensajes."
+    ],
+    "answer": [0],
+    "explanation": "El uso de estas características y ser específico en los mensajes proporciona un contexto y una intención claros, lo que da lugar a mejores respuestas.",
+    "docs": "https://learn.microsoft.com/es-es/training/modules/introduction-prompt-engineering-with-github-copilot/",
+    "source": "https://learn.microsoft.com/es-es/credentials/certifications/github-copilot/?practice-assessment-type=certification"
+  },
+  {
+    "id": "ms-033",
+    "domain": "Ingeniería de prompts y contexto",
+    "question": "¿Cuál de las siguientes no es un principio de ingeniería rápida eficaz para GitHub Copilot?",
+    "options": [
+      "Verbosidad: proveer descripciones exhaustivas y detalladas.",
+      "Claridad: escribir instrucciones claras y precisas.",
+      "Especificidad: centrarse en una tarea bien definida.",
+      "Contexto: proporcionar información relevante y ejemplos."
+    ],
+    "answer": [0],
+    "explanation": "La verbosidad no es un principio de ingeniería de prompts eficaz. Las indicaciones concisas y claras son más eficaces que las detalladas excesivamente.",
+    "docs": "https://learn.microsoft.com/es-es/training/modules/introduction-prompt-engineering-with-github-copilot/",
+    "source": "https://learn.microsoft.com/es-es/credentials/certifications/github-copilot/?practice-assessment-type=certification"
+  },
+  {
+    "id": "ms-034",
+    "domain": "Productividad del desarrollador",
+    "question": "¿Cuál es el propósito de la refactorización de código?",
+    "options": [
+      "Para mejorar la estructura interna del código sin modificar su comportamiento o funcionalidad externos.",
+      "Para agregar nuevas funcionalidades al sistema.",
+      "Para cambiar el lenguaje de programación del proyecto.",
+      "Para corregir errores visibles por el usuario final."
+    ],
+    "answer": [0],
+    "explanation": "La refactorización mejora la estructura interna al tiempo que mantiene el mismo comportamiento externo.",
+    "docs": "https://learn.microsoft.com/es-es/training/modules/develop-code-features-using-github-copilot-tools/",
+    "source": "https://learn.microsoft.com/es-es/credentials/certifications/github-copilot/?practice-assessment-type=certification"
+  },
+  {
+    "id": "ms-035",
+    "domain": "Productividad del desarrollador",
+    "question": "¿Cuál es el propósito principal de la documentación del proyecto en el desarrollo de software?",
+    "options": [
+      "Para proporcionar información esencial para comprender el ámbito y el propósito del proyecto.",
+      "Para reemplazar las pruebas automatizadas.",
+      "Para aumentar el tamaño del repositorio.",
+      "Para ocultar los detalles de implementación a los colaboradores."
+    ],
+    "answer": [0],
+    "explanation": "La documentación del proyecto describe el ámbito, el propósito y los requisitos, lo que ayuda a comprender y colaborar.",
+    "docs": "https://learn.microsoft.com/es-es/training/modules/generate-documentation-using-github-copilot-tools/",
+    "source": "https://learn.microsoft.com/es-es/credentials/certifications/github-copilot/?practice-assessment-type=certification"
+  },
+  {
+    "id": "ms-036",
+    "domain": "Productividad del desarrollador",
+    "question": "¿Cuál es el propósito de generar documentación de código insertada en el desarrollo de software?",
+    "options": [
+      "Para crear un código base más legible y fácil de mantener que es más fácil para otros desarrolladores comprender y trabajar con ellos.",
+      "Para que el código se ejecute más rápido.",
+      "Para cumplir con un requisito del compilador.",
+      "Para ocultar la lógica del código a otros desarrolladores."
+    ],
+    "answer": [0],
+    "explanation": "La documentación insertada mejora la legibilidad y el mantenimiento del código, lo que facilita a los desarrolladores comprender y trabajar con él.",
+    "docs": "https://learn.microsoft.com/es-es/training/modules/generate-documentation-using-github-copilot-tools/",
+    "source": "https://learn.microsoft.com/es-es/credentials/certifications/github-copilot/?practice-assessment-type=certification"
+  },
+  {
+    "id": "ms-037",
+    "domain": "Productividad del desarrollador",
+    "question": "¿Qué tipos de conversiones de código se pueden completar con GitHub Copilot?",
+    "options": [
+      "Convierta un archivo de código completo, una función o un fragmento de código en otro lenguaje de programación.",
+      "Solo convertir código a pseudocódigo.",
+      "Solo convertir archivos entre codificaciones de caracteres (UTF-8, ASCII).",
+      "Convertir código fuente en un ejecutable binario."
+    ],
+    "answer": [0],
+    "explanation": "GitHub Copilot puede ayudar a convertir código entre lenguajes de programación, lo que ayuda al desarrollo multiplataforma.",
+    "docs": "https://learn.microsoft.com/es-es/training/modules/develop-code-features-using-github-copilot-tools/",
+    "source": "https://learn.microsoft.com/es-es/credentials/certifications/github-copilot/?practice-assessment-type=certification"
+  },
+  {
+    "id": "ms-038",
+    "domain": "Productividad del desarrollador",
+    "question": "¿Cuál es el rol de Chat de GitHub Copilot en la generación de casos de prueba unitaria?",
+    "options": [
+      "Ayuda a generar fragmentos de código para casos de prueba basados en el código especificado por el usuario, sugiere posibles parámetros de entrada, valores de salida esperados y aserciones, y puede ayudar a identificar casos perimetrales y condiciones de límite.",
+      "Ejecuta las pruebas en la nube y garantiza una cobertura del 100%.",
+      "Reemplaza la necesidad de escribir pruebas, porque Copilot verifica el código en tiempo real.",
+      "Solo puede generar pruebas para código escrito por Copilot."
+    ],
+    "answer": [0],
+    "explanation": "GitHub Copilot Chat genera casos de prueba, sugiere entradas, salidas y aserciones, e identifica los casos perimetrales.",
+    "docs": "https://learn.microsoft.com/es-es/training/modules/develop-unit-tests-using-github-copilot-tools/",
+    "source": "https://learn.microsoft.com/es-es/credentials/certifications/github-copilot/?practice-assessment-type=certification"
+  },
+  {
+    "id": "ms-039",
+    "domain": "Productividad del desarrollador",
+    "question": "¿Cuál es el propósito del Explorador de pruebas en Visual Studio Code?",
+    "options": [
+      "Para ejecutar y depurar pruebas unitarias, ver los resultados de las ejecuciones de pruebas y administrar casos de prueba en el área de trabajo.",
+      "Para generar pruebas automáticamente sin intervención del usuario.",
+      "Para explorar los archivos del sistema operativo.",
+      "Para publicar los resultados de las pruebas en GitHub Pages."
+    ],
+    "answer": [0],
+    "explanation": "El Explorador de pruebas se usa para ejecutar, depurar y administrar pruebas unitarias en Visual Studio Code.",
+    "docs": "https://code.visualstudio.com/docs/debugtest/testing",
+    "source": "https://learn.microsoft.com/es-es/credentials/certifications/github-copilot/?practice-assessment-type=certification"
+  },
+  {
+    "id": "ms-040",
+    "domain": "Productividad del desarrollador",
+    "question": "¿Cuál es la importancia de las secciones Organizar, Actuar y Aserción en las pruebas unitarias?",
+    "options": [
+      "Se utilizan para estructurar las pruebas unitarias en fases de preparación (Organizar), ejecución (Actuar) y verificación (Aserción).",
+      "Definen el orden en que se ejecutan los archivos de prueba.",
+      "Son niveles de severidad para clasificar los errores encontrados.",
+      "Indican qué pruebas se ejecutan en producción."
+    ],
+    "answer": [0],
+    "explanation": "Este patrón (Arrange-Act-Assert) estructura las pruebas unitarias en fases de configuración, ejecución y comprobación.",
+    "docs": "https://learn.microsoft.com/es-es/training/modules/develop-unit-tests-using-github-copilot-tools/",
+    "source": "https://learn.microsoft.com/es-es/credentials/certifications/github-copilot/?practice-assessment-type=certification"
+  },
+  {
+    "id": "ms-041",
+    "domain": "Productividad del desarrollador",
+    "question": "¿Qué proporciona GitHub Copilot al crear pruebas unitarias para condiciones específicas?",
+    "options": [
+      "Sugiere finalizaciones y genera pruebas basadas en el contexto de código.",
+      "Garantiza que todas las pruebas generadas pasen.",
+      "Genera datos de producción reales para las pruebas.",
+      "Ejecuta las pruebas automáticamente en cada pulsación de tecla."
+    ],
+    "answer": [0],
+    "explanation": "GitHub Copilot sugiere y genera pruebas basadas en el contexto de código.",
+    "docs": "https://learn.microsoft.com/es-es/training/modules/develop-unit-tests-using-github-copilot-tools/",
+    "source": "https://learn.microsoft.com/es-es/credentials/certifications/github-copilot/?practice-assessment-type=certification"
+  },
+  {
+    "id": "ms-042",
+    "domain": "Productividad del desarrollador",
+    "question": "¿Cuál es la ventaja de usar GitHub Copilot para generar pruebas unitarias?",
+    "options": [
+      "Puede sugerir una variedad de pruebas unitarias basadas en el contexto de código, lo que ahorra tiempo de desarrollo.",
+      "Elimina la necesidad de revisar las pruebas.",
+      "Garantiza que el código no tenga errores.",
+      "Solo genera pruebas para lenguajes compilados."
+    ],
+    "answer": [0],
+    "explanation": "GitHub Copilot ahorra tiempo al sugerir pruebas unitarias pertinentes en función del contexto de código.",
+    "docs": "https://learn.microsoft.com/es-es/training/modules/develop-unit-tests-using-github-copilot-tools/",
+    "source": "https://learn.microsoft.com/es-es/credentials/certifications/github-copilot/?practice-assessment-type=certification"
+  },
+  {
+    "id": "ms-043",
+    "domain": "Productividad del desarrollador",
+    "question": "¿Cuál es el propósito de generar aserciones para asegurarse de que los parámetros de entrada de función son válidos?",
+    "options": [
+      "Para evitar que la función procese datos no válidos.",
+      "Para que la función se ejecute más rápido.",
+      "Para registrar todas las llamadas a la función.",
+      "Para convertir automáticamente los datos al tipo correcto."
+    ],
+    "answer": [0],
+    "explanation": "Las aserciones garantizan que la función procese solo los datos válidos.",
+    "docs": "https://learn.microsoft.com/es-es/training/modules/develop-unit-tests-using-github-copilot-tools/",
+    "source": "https://learn.microsoft.com/es-es/credentials/certifications/github-copilot/?practice-assessment-type=certification"
+  },
+  {
+    "id": "ms-044",
+    "domain": "Productividad del desarrollador",
+    "question": "¿Qué factores se pueden tener en cuenta al trabajar en mejoras en la calidad del código?",
+    "options": [
+      "Legibilidad, complejidad, modularidad, reutilización, capacidad de prueba, extensibilidad, confiabilidad, rendimiento, seguridad, escalabilidad, facilidad de uso y portabilidad.",
+      "Solo la cantidad de líneas de código.",
+      "Solo el rendimiento en tiempo de ejecución.",
+      "El número de commits por día del equipo."
+    ],
+    "answer": [0],
+    "explanation": "Estos factores definen exhaustivamente la calidad del código.",
+    "docs": "https://learn.microsoft.com/es-es/training/modules/develop-code-features-using-github-copilot-tools/",
+    "source": "https://learn.microsoft.com/es-es/credentials/certifications/github-copilot/?practice-assessment-type=certification"
+  },
+  {
+    "id": "ms-045",
+    "domain": "Productividad del desarrollador",
+    "question": "¿A qué se refiere la confiabilidad del código en el desarrollo de software?",
+    "options": [
+      "Probabilidad de que el software funcione correctamente en condiciones específicas y durante un período de tiempo determinado.",
+      "La velocidad con la que el software responde a las solicitudes.",
+      "La cantidad de usuarios que confían en el software.",
+      "La facilidad para leer el código fuente."
+    ],
+    "answer": [0],
+    "explanation": "La confiabilidad del código es una medida de cómo un sistema de software realiza de forma coherente sus funciones previstas sin errores en condiciones especificadas.",
+    "docs": "https://learn.microsoft.com/es-es/training/modules/develop-code-features-using-github-copilot-tools/",
+    "source": "https://learn.microsoft.com/es-es/credentials/certifications/github-copilot/?practice-assessment-type=certification"
+  },
+  {
+    "id": "ms-046",
+    "domain": "Productividad del desarrollador",
+    "question": "¿Cuál es una manera de mejorar la confiabilidad del código?",
+    "options": [
+      "Al identificar posibles problemas en el código para prevenir fallos y errores.",
+      "Al eliminar el manejo de excepciones para simplificar el código.",
+      "Al evitar escribir pruebas para entregar más rápido.",
+      "Al aumentar el número de dependencias externas."
+    ],
+    "answer": [0],
+    "explanation": "Identificar y solucionar posibles problemas en el código ayuda a evitar fallos y errores, lo que mejora la confiabilidad.",
+    "docs": "https://learn.microsoft.com/es-es/training/modules/develop-code-features-using-github-copilot-tools/",
+    "source": "https://learn.microsoft.com/es-es/credentials/certifications/github-copilot/?practice-assessment-type=certification"
+  },
+  {
+    "id": "ms-047",
+    "domain": "Ingeniería de prompts y contexto",
+    "question": "¿Cuál es el efecto de mantener una barra de alta calidad en el código al usar GitHub Copilot?",
+    "options": [
+      "Copilot se bloquea en el código para generar sugerencias que siguen el patrón existente.",
+      "Ralentiza el proceso de sugerencia.",
+      "Copilot deja de generar sugerencias porque el código ya es perfecto.",
+      "No tiene ningún efecto en las sugerencias."
+    ],
+    "answer": [0],
+    "explanation": "Mantener código de alta calidad ayuda a Copilot a comprender y replicar patrones existentes, lo que conduce a sugerencias más relevantes y coherentes.",
+    "docs": "https://learn.microsoft.com/es-es/training/modules/develop-code-features-using-github-copilot-tools/",
+    "source": "https://learn.microsoft.com/es-es/credentials/certifications/github-copilot/?practice-assessment-type=certification"
+  },
+  {
+    "id": "ms-048",
+    "domain": "Productividad del desarrollador",
+    "question": "¿Cuáles son algunas maneras de mejorar el control de excepciones en el código para que sea más seguro?",
+    "options": [
+      "Capture las excepciones más específicas posibles, evite revelar información confidencial en excepciones y evite tragar excepciones.",
+      "Capture todas las excepciones con un bloque genérico y no haga nada.",
+      "Muestre la traza completa de la excepción al usuario final.",
+      "Desactive las excepciones en producción."
+    ],
+    "answer": [0],
+    "explanation": "Detectar excepciones específicas permite un manejo específico, evitar que la información confidencial en excepciones cause fugas, y no tragar excepciones garantiza que los errores se registren o se relancen para la depuración.",
+    "docs": "https://learn.microsoft.com/es-es/training/modules/develop-code-features-using-github-copilot-tools/",
+    "source": "https://learn.microsoft.com/es-es/credentials/certifications/github-copilot/?practice-assessment-type=certification"
+  },
+  {
+    "id": "ms-049",
+    "domain": "IA responsable",
+    "question": "¿Cuál es el propósito principal del filtrado de contenido en GitHub Copilot?",
+    "options": [
+      "Para evitar la generación de código malintencionado o dañino",
+      "Para priorizar la velocidad y la eficacia en la generación de código",
+      "Para reducir el número de sugerencias mostradas",
+      "Para ocultar el código de los repositorios privados"
+    ],
+    "answer": [0],
+    "explanation": "El filtrado de contenido garantiza que Copilot no genere código malintencionado o dañino.",
+    "docs": "https://learn.microsoft.com/es-es/training/modules/responsible-ai-with-github-copilot/",
+    "source": "https://learn.microsoft.com/es-es/credentials/certifications/github-copilot/?practice-assessment-type=certification"
+  },
+  {
+    "id": "ms-050",
+    "domain": "IA responsable",
+    "question": "¿Cuál es el propósito principal del filtro de toxicidad en GitHub Copilot?",
+    "options": [
+      "Para eliminar contenido dañino o ofensivo en sugerencias de código",
+      "Para detectar código con bajo rendimiento",
+      "Para bloquear sugerencias que coinciden con código público",
+      "Para impedir el uso de Copilot en ciertos lenguajes"
+    ],
+    "answer": [0],
+    "explanation": "El filtro de toxicidad evita contenido dañino o ofensivo en sugerencias de código.",
+    "docs": "https://learn.microsoft.com/es-es/training/modules/responsible-ai-with-github-copilot/",
+    "source": "https://learn.microsoft.com/es-es/credentials/certifications/github-copilot/?practice-assessment-type=certification"
+  },
+  {
+    "id": "ext-029",
+    "domain": "IA responsable",
+    "question": "¿Por qué es necesario validar la salida de GitHub Copilot antes de usarla?",
+    "options": [
+      "Porque el modelo puede generar código incorrecto, inseguro o desactualizado que parece convincente",
+      "Porque Copilot solo genera pseudocódigo que debe traducirse manualmente",
+      "Porque GitHub exige una aprobación manual para cada sugerencia aceptada",
+      "No es necesario: las sugerencias pasan por filtros que garantizan que el código es correcto"
+    ],
+    "answer": [0],
+    "explanation": "La IA generativa puede \"alucinar\" APIs, usar conocimiento desactualizado o introducir vulnerabilidades con total confianza. Los filtros de Copilot reducen riesgos, pero no garantizan corrección: revisar, probar y validar sigue siendo tarea del desarrollador.",
+    "docs": "https://learn.microsoft.com/en-us/training/modules/responsible-ai-with-github-copilot/",
+    "source": "original"
+  },
+  {
+    "id": "ext-030",
+    "domain": "IA responsable",
+    "question": "Copilot sugiere una función que incluye una clave de API escrita directamente en el código. ¿Cuál es la mejor forma de mitigar este daño?",
+    "options": [
+      "Eliminar la clave del código, usar un gestor de secretos o variables de entorno y mantener activo secret scanning",
+      "Aceptar la sugerencia porque Copilot elimina los secretos en el post-procesamiento",
+      "Mover la clave a un comentario para que no se ejecute",
+      "Hacer el repositorio privado y dejar la clave en el código"
+    ],
+    "answer": [0],
+    "explanation": "Las sugerencias pueden reproducir patrones inseguros como credenciales embebidas. La mitigación combina revisión humana, buenas prácticas (secretos fuera del código) y herramientas como secret scanning y code scanning.",
+    "docs": "https://learn.microsoft.com/en-us/training/modules/responsible-ai-with-github-copilot/",
+    "source": "original"
+  },
+  {
+    "id": "ext-031",
+    "domain": "IA responsable",
+    "question": "¿Qué establece el principio de Responsabilidad (Accountability) de la IA responsable?",
+    "options": [
+      "Las personas y organizaciones que diseñan, implementan y usan sistemas de IA siguen siendo responsables de su funcionamiento y resultados",
+      "El modelo de IA es legalmente responsable del código que genera",
+      "Cada sugerencia debe indicar qué desarrollador entrenó el modelo",
+      "La IA debe responder siempre en el idioma del usuario"
+    ],
+    "answer": [0],
+    "explanation": "Accountability significa que la responsabilidad final es humana: quien usa Copilot responde por el código que incorpora, y las organizaciones deben definir supervisión y gobierno sobre el uso de la IA.",
+    "docs": "https://learn.microsoft.com/en-us/training/modules/responsible-ai-with-github-copilot/3-six-principles-of-responsible-ai",
+    "source": "original"
+  },
+  {
+    "id": "ext-032",
+    "domain": "IA responsable",
+    "question": "¿Qué busca el principio de Inclusión en la IA responsable?",
+    "options": [
+      "Que los sistemas de IA empoderen e involucren a todas las personas, incluidas personas con discapacidad",
+      "Que el sistema incluya todos los lenguajes de programación existentes",
+      "Que todo el código generado se incluya en el repositorio",
+      "Que el modelo se entrene incluyendo repositorios privados"
+    ],
+    "answer": [0],
+    "explanation": "La Inclusión pide diseñar sistemas de IA que sirvan a la mayor diversidad de personas posible, considerando accesibilidad y distintas necesidades desde el inicio.",
+    "docs": "https://learn.microsoft.com/en-us/training/modules/responsible-ai-with-github-copilot/3-six-principles-of-responsible-ai",
+    "source": "original"
+  },
+  {
+    "id": "ext-033",
+    "domain": "IA responsable",
+    "question": "¿Qué implica el principio de Fiabilidad y seguridad (Reliability and safety)?",
+    "options": [
+      "Que el sistema de IA funcione de manera consistente y segura, incluso ante condiciones inesperadas, y se pruebe y supervise",
+      "Que el sistema nunca cometa errores",
+      "Que los datos se cifren en reposo",
+      "Que el sistema esté disponible el 100% del tiempo"
+    ],
+    "answer": [0],
+    "explanation": "Fiabilidad y seguridad exige que la IA se comporte como se espera, resista condiciones imprevistas y sea evaluada y monitoreada. No promete ausencia total de errores, por eso la validación humana sigue siendo necesaria.",
+    "docs": "https://learn.microsoft.com/en-us/training/modules/responsible-ai-with-github-copilot/3-six-principles-of-responsible-ai",
+    "source": "original"
+  },
+  {
+    "id": "ext-034",
+    "domain": "IA responsable",
+    "question": "¿Cuál es una práctica para operar GitHub Copilot de forma responsable?",
+    "options": [
+      "No incluir secretos ni datos personales sensibles en los prompts y seguir las políticas de uso de IA de la organización",
+      "Desactivar el filtro de código público para obtener más sugerencias",
+      "Aceptar sugerencias largas sin revisarlas para ahorrar tiempo",
+      "Compartir la licencia de Copilot con el equipo para reducir costos"
+    ],
+    "answer": [0],
+    "explanation": "Usar Copilot responsablemente incluye cuidar qué información se envía como contexto, respetar las políticas de la organización y revisar siempre lo que se acepta.",
+    "docs": "https://learn.microsoft.com/en-us/training/modules/responsible-ai-with-github-copilot/",
+    "source": "original"
+  },
+  {
+    "id": "ext-035",
+    "domain": "Privacidad, exclusiones y salvaguardas",
+    "question": "¿Quién es dueño de las sugerencias de código que genera GitHub Copilot?",
+    "options": [
+      "GitHub no reclama la propiedad de las sugerencias; el usuario es responsable del código que decide usar",
+      "GitHub es dueño de todo el código sugerido y licencia su uso",
+      "El autor del repositorio público más parecido",
+      "Microsoft, porque entrena los modelos"
+    ],
+    "answer": [0],
+    "explanation": "GitHub no reclama la propiedad de las sugerencias. Como con cualquier código, el usuario decide si lo incorpora y es responsable de él, incluida la revisión de posibles coincidencias con código público y sus licencias.",
+    "docs": "https://copilot.github.trust.page/",
+    "source": "original"
+  },
+  {
+    "id": "ext-036",
+    "domain": "Privacidad, exclusiones y salvaguardas",
+    "question": "Un administrador agregó una exclusión de contenido, pero un desarrollador sigue recibiendo sugerencias en ese archivo en VS Code. ¿Qué debería hacer?",
+    "options": [
+      "Esperar, porque el cambio puede tardar hasta 30 minutos, o recargar la ventana con \"Developer: Reload Window\"",
+      "Reinstalar el sistema operativo",
+      "Agregar el archivo al .gitignore",
+      "Nada: las exclusiones solo aplican en GitHub.com"
+    ],
+    "answer": [0],
+    "explanation": "Los cambios en exclusiones pueden tardar hasta 30 minutos en llegar a IDEs que ya cargaron la configuración. En VS Code se aplican antes recargando la ventana; en JetBrains y Visual Studio, cerrando y abriendo la aplicación.",
+    "docs": "https://docs.github.com/en/copilot/how-tos/configure-content-exclusion/exclude-content-from-copilot",
+    "source": "original"
+  },
+  {
+    "id": "ext-037",
+    "domain": "Privacidad, exclusiones y salvaguardas",
+    "question": "¿Cómo desactivas las sugerencias en línea de Copilot solo para archivos Markdown en VS Code?",
+    "options": [
+      "Con el ajuste `github.copilot.enable`, por ejemplo `{\"*\": true, \"markdown\": false}`",
+      "Creando un archivo `.copilotignore` con `*.md`",
+      "Agregando `copilot: false` en el encabezado de cada archivo",
+      "No es posible; Copilot se activa o desactiva para todos los lenguajes"
+    ],
+    "answer": [0],
+    "explanation": "La configuración del editor permite habilitar o deshabilitar Copilot por lenguaje mediante `github.copilot.enable`. Es una preferencia personal; las exclusiones de contenido, en cambio, las configuran administradores.",
+    "docs": "https://docs.github.com/en/copilot/how-tos/configure-personal-settings/configure-in-ide",
+    "source": "original"
+  },
+  {
+    "id": "ext-038",
+    "domain": "Funcionalidades de Copilot",
+    "question": "¿Cómo ejecutas GitHub Copilot CLI con un único prompt, sin abrir una sesión interactiva, por ejemplo dentro de un script?",
+    "options": [
+      "Con `copilot --prompt \"...\"` (o `-p`)",
+      "Con `gh copilot suggest \"...\"`",
+      "Con `copilot --interactive \"...\"`",
+      "No es posible; Copilot CLI solo funciona de forma interactiva"
+    ],
+    "answer": [0],
+    "explanation": "Al ejecutar `copilot` se abre una sesión interactiva. Con `--prompt`/`-p` se envía un prompt de forma programática, útil en scripts. `gh copilot suggest` pertenece a la extensión antigua, ya retirada.",
+    "docs": "https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-copilot-cli",
+    "source": "original"
+  },
+  {
+    "id": "ext-039",
+    "domain": "Funcionalidades de Copilot",
+    "question": "La primera vez que inicias GitHub Copilot CLI en una carpeta, ¿qué ocurre?",
+    "options": [
+      "Te pide confirmar que confías en los archivos de esa carpeta, y luego solicita aprobación antes de usar herramientas que modifiquen o ejecuten archivos",
+      "Sube todo el contenido de la carpeta a GitHub para indexarlo",
+      "Ejecuta automáticamente todos los scripts de la carpeta",
+      "Crea un repositorio nuevo en GitHub.com"
+    ],
+    "answer": [0],
+    "explanation": "Copilot CLI pregunta si confías en la carpeta (solo para la sesión o recordándola). Las herramientas que modifican o ejecutan archivos requieren tu aprobación: una vez, para toda la sesión, o rechazarlas. `--allow-all` habilita todos los permisos.",
+    "docs": "https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-copilot-cli",
+    "source": "original"
+  },
+  {
+    "id": "ext-040",
+    "domain": "Funcionalidades de Copilot",
+    "question": "¿Cómo retomas en GitHub Copilot CLI la sesión local que cerraste más recientemente?",
+    "options": [
+      "Con `copilot --continue`",
+      "Con `copilot --restart`",
+      "Con `git stash pop`",
+      "Las sesiones no se pueden retomar"
+    ],
+    "answer": [0],
+    "explanation": "`copilot --continue` retoma la última sesión local cerrada. Para elegir otra sesión se usa `--resume` o el comando `/resume` dentro de la CLI.",
+    "docs": "https://docs.github.com/en/copilot/how-tos/use-copilot-agents/use-copilot-cli",
+    "source": "original"
+  },
+  {
+    "id": "ext-041",
+    "domain": "Funcionalidades de Copilot",
+    "question": "¿Qué ventaja tiene delegar una tarea a un subagente en el modo agente?",
+    "options": [
+      "El subagente trabaja en su propio contexto y devuelve solo un resultado enfocado, manteniendo limpio el contexto de la conversación principal",
+      "El subagente comparte y amplía la misma ventana de contexto que el agente principal",
+      "El subagente no consume uso del modelo",
+      "El subagente puede aprobar automáticamente los pull requests"
+    ],
+    "answer": [0],
+    "explanation": "Un subagente tiene un contexto separado: el agente principal recibe el resultado, no cada archivo leído o búsqueda intermedia. Conviene para tareas acotadas (investigar, comparar enfoques, revisar cambios), aunque agrega uso del modelo.",
+    "docs": "https://code.visualstudio.com/docs/copilot/agents/subagents",
+    "source": "original"
+  },
+  {
+    "id": "ext-042",
+    "domain": "Funcionalidades de Copilot",
+    "question": "¿Qué son los Copilot Spaces?",
+    "options": [
+      "Colecciones de contexto (repositorios, código, pull requests, issues, notas y archivos) que se usan para fundamentar las respuestas de Copilot",
+      "Entornos de ejecución en la nube para desplegar aplicaciones",
+      "Espacios de almacenamiento para los logs de Copilot",
+      "Una función exclusiva de Copilot Enterprise para entrenar modelos"
+    ],
+    "answer": [0],
+    "explanation": "Spaces organiza el contexto que Copilot usa para responder y se puede compartir con el equipo. Cualquier persona con licencia de Copilot, incluido Copilot Free, puede crearlos. Reemplazaron a las knowledge bases.",
+    "docs": "https://docs.github.com/en/copilot/concepts/context/spaces",
+    "source": "original"
+  },
+  {
+    "id": "ext-043",
+    "domain": "Funcionalidades de Copilot",
+    "question": "¿Cómo defines estándares de revisión personalizados para Copilot code review en un repositorio?",
+    "options": [
+      "Con `.github/copilot-instructions.md` y archivos `*.instructions.md` con `applyTo` en `.github/instructions/`",
+      "Con un archivo `CODEOWNERS`",
+      "Con reglas de protección de ramas",
+      "Con etiquetas en cada pull request"
+    ],
+    "answer": [0],
+    "explanation": "Copilot code review lee las instrucciones de todo el repositorio (`copilot-instructions.md`), las específicas por ruta (`*.instructions.md` con `applyTo`) y `AGENTS.md`, desde la rama head del pull request. Se recomienda no superar unas 1.000 líneas por archivo.",
+    "docs": "https://docs.github.com/en/copilot/tutorials/customize-code-review",
+    "source": "original"
+  },
+  {
+    "id": "ext-044",
+    "domain": "Funcionalidades de Copilot",
+    "question": "¿Qué endpoint de la REST API asigna asientos de Copilot a usuarios específicos de una organización?",
+    "options": [
+      "`POST /orgs/{org}/copilot/billing/selected_users`",
+      "`PUT /orgs/{org}/members/{username}/copilot`",
+      "`POST /user/copilot/enable`",
+      "`PATCH /orgs/{org}/copilot/policies`"
+    ],
+    "answer": [0],
+    "explanation": "La API de administración de usuarios de Copilot permite agregar o quitar usuarios (`selected_users`) y equipos (`selected_teams`) de la suscripción, listar asientos (`GET .../billing/seats`) y ver la asignación de un miembro.",
+    "docs": "https://docs.github.com/en/rest/copilot/copilot-user-management",
+    "source": "original"
+  },
+  {
+    "id": "ext-045",
+    "domain": "Funcionalidades de Copilot",
+    "question": "¿Dónde habilita un propietario de organización funciones como Copilot code review o decide qué funciones están disponibles en los IDE y en GitHub.com?",
+    "options": [
+      "En la configuración de la organización, en las políticas de Copilot",
+      "En el archivo `.github/copilot-instructions.md` de cada repositorio",
+      "En la configuración personal del IDE de cada desarrollador",
+      "En el audit log de la organización"
+    ],
+    "answer": [0],
+    "explanation": "Las políticas de Copilot de la organización (o de la enterprise, que puede imponerlas) controlan la disponibilidad de funciones como code review, modelos, MCP o código público. El audit log solo registra los cambios.",
+    "docs": "https://docs.github.com/en/copilot/how-tos/administer-copilot/manage-for-organization/manage-policies",
+    "source": "original"
+  },
+  {
+    "id": "ext-046",
+    "domain": "Funcionalidades de Copilot",
+    "question": "¿Qué diferencia al modo agente del modo Ask en Copilot Chat?",
+    "options": [
+      "El modo agente puede planificar y ejecutar tareas de forma autónoma: editar varios archivos, usar herramientas y ejecutar comandos, iterando sobre los resultados",
+      "El modo agente solo responde preguntas, sin modificar archivos",
+      "El modo Ask ejecuta comandos en la terminal y el modo agente no",
+      "No hay diferencia; son nombres distintos para lo mismo"
+    ],
+    "answer": [0],
+    "explanation": "Ask responde preguntas sin modificar el proyecto. Agent analiza el código, usa herramientas (incluidas las de servidores MCP), hace cambios en varios archivos y ejecuta comandos, pidiendo aprobación cuando corresponde.",
+    "docs": "https://code.visualstudio.com/docs/copilot/chat/chat-agent-mode",
+    "source": "original"
+  },
+  {
+    "id": "ext-047",
+    "domain": "Ingeniería de prompts y contexto",
+    "question": "¿Cómo influye el historial de la conversación en las respuestas de Copilot Chat?",
+    "options": [
+      "Copilot usa los mensajes anteriores del hilo como contexto, por lo que conviene iniciar un hilo nuevo o eliminar solicitudes irrelevantes al cambiar de tema",
+      "Copilot ignora los mensajes anteriores y solo usa el último",
+      "El historial se usa para entrenar el modelo de tu organización",
+      "El historial solo se usa si escribes #history"
+    ],
+    "answer": [0],
+    "explanation": "El historial del hilo forma parte del contexto. Mantenerlo relevante (hilos nuevos para tareas nuevas, borrar preguntas que ya no aplican) mejora la precisión de las respuestas.",
+    "docs": "https://docs.github.com/en/copilot/concepts/prompting/prompt-engineering",
     "source": "original"
   }
 ]

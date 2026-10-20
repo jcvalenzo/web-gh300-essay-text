@@ -1,13 +1,21 @@
+import { useState } from 'react'
 import { Logo } from '../../components/Logo.jsx'
 import { Badge } from '../../components/ui/Badge.jsx'
 import { Button } from '../../components/ui/Button.jsx'
 import { Card } from '../../components/ui/Card.jsx'
-import { EXAM_MINUTES, PASS_PERCENT, SOURCES } from '../../config.js'
+import { EXAM_MINUTES, EXAM_QUESTIONS, PASS_PERCENT, SOURCES } from '../../config.js'
 import { countByDomain } from '../../lib/exam.js'
+import { cx } from '../../lib/format.js'
 
 export function StartScreen({ questions, onStart }) {
+  const modes = [
+    { size: Math.min(EXAM_QUESTIONS, questions.length), label: 'Aleatorias', hint: 'Como el examen real' },
+    { size: questions.length, label: 'Todas', hint: 'El banco completo' },
+  ]
+  const [selected, setSelected] = useState(0)
+  const { size } = modes[selected]
   const stats = [
-    [questions.length, 'preguntas'],
+    [size, 'preguntas'],
     [EXAM_MINUTES, 'minutos'],
     [`${PASS_PERCENT}%`, 'para aprobar'],
   ]
@@ -49,8 +57,42 @@ export function StartScreen({ questions, onStart }) {
         </ul>
       </Card>
 
+      <fieldset className="mt-8">
+        <legend className="text-sm font-semibold tracking-wider text-stone-500 uppercase dark:text-stone-400">
+          Cantidad de preguntas
+        </legend>
+        <div className="mt-3 grid gap-3 sm:grid-cols-2">
+          {modes.map((mode, i) => (
+            <label
+              key={mode.label}
+              className={cx(
+                'flex cursor-pointer items-center gap-3 rounded-lg border bg-white p-4 transition dark:bg-stone-900',
+                'has-focus-visible:outline-2 has-focus-visible:outline-accent-500',
+                selected === i
+                  ? 'border-accent-600 ring-1 ring-accent-600'
+                  : 'border-stone-200 hover:border-stone-300 dark:border-white/10 dark:hover:border-white/20',
+              )}
+            >
+              <input
+                type="radio"
+                name="exam-size"
+                className="size-4 accent-accent-600"
+                checked={selected === i}
+                onChange={() => setSelected(i)}
+              />
+              <span>
+                <span className="block font-semibold">
+                  {mode.size} {mode.label.toLowerCase()}
+                </span>
+                <span className="block text-sm text-stone-500 dark:text-stone-400">{mode.hint}</span>
+              </span>
+            </label>
+          ))}
+        </div>
+      </fieldset>
+
       <div className="mt-8 flex flex-col items-start gap-4 sm:flex-row sm:items-center">
-        <Button variant="primary" size="lg" onClick={onStart}>
+        <Button variant="primary" size="lg" onClick={() => onStart(size)}>
           Comenzar examen →
         </Button>
         <p className="text-sm text-stone-500 dark:text-stone-400">El tiempo empieza a correr al comenzar.</p>

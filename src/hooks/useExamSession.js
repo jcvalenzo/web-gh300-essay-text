@@ -12,8 +12,8 @@ export function useExamSession(questionBank) {
 
   const actions = useMemo(
     () => ({
-      start: () =>
-        dispatch({ type: 'start', exam: buildExam(questionBank), endsAt: Date.now() + EXAM_MINUTES * 60_000 }),
+      start: (size) =>
+        dispatch({ type: 'start', exam: buildExam(questionBank, size), endsAt: Date.now() + EXAM_MINUTES * 60_000 }),
       select: (option) => dispatch({ type: 'select', option }),
       toggleFlag: () => dispatch({ type: 'toggleFlag' }),
       goTo: (index) => dispatch({ type: 'goTo', index }),
